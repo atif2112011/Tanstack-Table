@@ -37,8 +37,8 @@ function DisplayName({getValue,row,column,table}) {
       >
 
       </ProfileModal>
-        <img className='h-10  w-10 object-cover'src={`${pfp}`} alt={username}  onClick={openModal}/>
-        <div className='flex flex-col'  onClick={openModal}>
+        <img className='h-10  w-10 object-cover cursor-pointer'src={`${pfp}`} alt={username}  onClick={openModal}/>
+        <div className='flex flex-col cursor-pointer'  onClick={openModal}>
             <div className='font-medium text-sm text-left'>{name}</div>
             <div className='font-normal  text-sm text-customgray text-left'>@{username}</div>
         </div>

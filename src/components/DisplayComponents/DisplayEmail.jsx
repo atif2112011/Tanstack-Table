@@ -27,7 +27,7 @@ function DisplayEmail({getValue,row,column,table}) {
       >
 
       </ProfileModal>
-        <div className='items-center text-gray-500 font-normal text-sm text-left' onClick={openModal}>{email}</div>
+        <div className='items-center text-gray-500 font-normal text-sm text-left cursor-pointer' onClick={openModal}>{email}</div>
         </>
     )
 }

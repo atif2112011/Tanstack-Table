@@ -25,7 +25,7 @@ function DisplayTeams({getValue,row,column,table}) {
       >
 
       </ProfileModal>
-    <div className='flex gap-1'onClick={openModal} >
+    <div className='flex gap-1 cursor-pointer'onClick={openModal} >
        <div className='border border-2 border-team1bg-500 rounded-2xl font-medium text-xs p-1 bg-team1bg text-team1 items-center'>Design
         </div> 
        <div className='border border-2 border-team2bg-500 rounded-2xl font-medium text-xs p-1 bg-team2bg text-team2 items-center'>Product

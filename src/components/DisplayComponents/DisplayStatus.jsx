@@ -22,7 +22,7 @@ function DisplayStatus({getValue,row,column,table}) {
       setStatus(getValue())
   },[getValue])
   return (
-    <div className='border border-2 border-gray-300 rounded-md h-5 w-15 flex gap-1 items-center py-0.5 px-1+ w-16 justify-center h-min'>
+    <div className='border border-2 border-gray-300 rounded-md h-5 w-15 flex gap-1 items-center py-0.5 px-1+ w-16 justify-center h-min cursor-pointer'>
       <ProfileModal
         isOpen={isModalOpen}
         onClose={closeModal}
