@@ -16,7 +16,7 @@ import Filter from '../assets/filter.svg'
 import Search from '../components/Search.jsx'
 import plus from '../assets/plus.svg'
 import DropdownFilter from '../components/DropDownFilter.jsx'
-import AddMemberModal from '../components/Modals/EditModal.jsx'
+import AddMemberModal from '../components/Modals/UserModal.jsx'
 
 function People() {
     const [data,setData]=useState(users)
