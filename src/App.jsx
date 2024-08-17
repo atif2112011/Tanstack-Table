@@ -4,8 +4,8 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Menu from './components/Menu'
 import MainBody from './components/MainBody'
-import People from './pages/people';
-import Dashboard from './pages/dashboard';
+import People from './pages/People'
+import Dashboard from './pages/Dashboard';
 
 function App() {
   
