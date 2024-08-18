@@ -22,17 +22,20 @@ function DisplayStatus({getValue,row,column,table}) {
       setStatus(getValue())
   },[getValue])
   return (
-    <div className='border border-2 border-gray-300 rounded-md h-5 w-15 flex gap-1 items-center py-0.5 px-1+ w-16 justify-center h-min cursor-pointer'>
-      <ProfileModal
+    <>
+    <ProfileModal
         isOpen={isModalOpen}
         onClose={closeModal}
         row={row}
       >
 
       </ProfileModal>
-        <img src={status=='Active'?dot:dot_red} className='h-2 w-2 ' onClick={openModal}/>
-        <div className='font-medium text-xs'onClick={openModal}>{status} </div>
+    <div className='border border-2 border-gray-300 rounded-md h-5 w-15 flex gap-1 items-center py-0.5 px-1+ w-16 justify-center h-min cursor-pointer' onClick={openModal}>
+      
+        <img src={status=='Active'?dot:dot_red} className='h-2 w-2 ' />
+        <div className='font-medium text-xs'>{status} </div>
     </div>
+    </>
   )
 }
 

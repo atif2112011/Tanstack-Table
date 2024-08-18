@@ -28,11 +28,25 @@ const DropdownFilter = ({columnFilters,setColumnFilters}) => {
   const onFilterChange=(id,value)=>{
     setColumnFilters(prev=>prev.filter(f=>f.id!=id))
 
-    for(const i of value)
+    if(id=='role')
     {
-        setColumnFilters(prev=>prev.concat({
-            id:id,value:i
-        }))
+      for(const i of value)
+      {
+          setColumnFilters(prev=>prev.concat({
+              id:id,value:i
+          }))
+      }
+
+    }
+    else
+    {
+      let valueArray=[]
+      for(const i of value)
+        valueArray.push(i);
+
+      setColumnFilters(prev=>prev.concat({
+        id:id,value:valueArray
+    }))
     }
 }
 
@@ -41,11 +55,11 @@ const DropdownFilter = ({columnFilters,setColumnFilters}) => {
   const handleFilter = () => {
     console.log("Selected Roles:", selectedRoles);
     console.log("Selected Teams:", selectedTeams);
-    // Update the filters for roles
-    onFilterChange('role', selectedRoles);
 
-    // Update the filters for teams
+    onFilterChange('role', selectedRoles);
     // onFilterChange('teams', selectedTeams);
+
+    
   };
 
   return (

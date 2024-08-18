@@ -7,7 +7,7 @@ const users = [
     status: "Active",
     role: "Frontend Developer",
     email: "alice.johnson@example.com",
-    teams: ["Design", "Product"],
+    teams: ["Design", "Product", "Marketing", "Finance"],
     personal: {
       "Date of Birth": "15-03-1990",
       Gender: "Male",

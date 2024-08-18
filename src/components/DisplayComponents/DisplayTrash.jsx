@@ -13,7 +13,7 @@ function DisplayButtons({props,setData}) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   
-  console.log(row)
+  
     const openModal = () => {
       setIsModalOpen(true);
     };
